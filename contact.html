@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | Grace Mary Mannem</title>
+<meta name="description" content="Contact form to reach me about internships, jobs or project collaboration.">
+<meta name="author" content="Grace Mary Mannem">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#14213D">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Contact | Grace Mary Mannem">
+<meta property="og:description" content="Contact form to reach me about internships, jobs or project collaboration.">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<header class="site-header">
+<a class="brand" href="index.html">Grace Mary Mannem</a>
+<nav aria-label="Main">
+<ul role="list"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="projects.html">Projects</a></li><li><a href="contact.html" aria-current="page">Contact</a></li></ul>
+</nav>
+</header>
+<main id="main" tabindex="-1">
+<section aria-labelledby="contact-title">
+<h1 id="contact-title">Contact me</h1>
+<p class="lead">Send a message and I will reply within two working days. Fields marked required must be filled in.</p>
+<div id="form-status" class="status" role="status" aria-live="polite" tabindex="-1"></div>
+<form id="contact-form" action="https://formspree.io/f/your-form-id" method="post" aria-labelledby="contact-title">
+<div class="field">
+<label for="name">Name <span class="req">(required)</span></label>
+<input id="name" name="name" type="text" autocomplete="name" required aria-describedby="name-error">
+<p class="error" id="name-error"></p>
+</div>
+<div class="field">
+<label for="email">Email address <span class="req">(required)</span></label>
+<input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-hint email-error">
+<p class="hint" id="email-hint">Example: name@example.com</p>
+<p class="error" id="email-error"></p>
+</div>
+<div class="field">
+<label for="topic">Reason for contacting</label>
+<select id="topic" name="topic">
+<option value="general">General question</option>
+<option value="internship">Internship or job</option>
+<option value="collab">Project collaboration</option>
+</select>
+</div>
+<div class="field">
+<label for="message">Message <span class="req">(required)</span></label>
+<textarea id="message" name="message" rows="6" required aria-describedby="message-error"></textarea>
+<p class="error" id="message-error"></p>
+</div>
+<button class="btn" type="submit">Send message</button>
+</form>
+</section>
+</main>
+<footer class="site-footer">
+<p>&copy; 2026 Grace Mary Mannem. Built with semantic HTML and no tracking.</p>
+<nav aria-label="Social links">
+<ul role="list">
+<li><a href="https://github.com/your-username">GitHub</a></li>
+<li><a href="https://www.linkedin.com/in/your-username">LinkedIn</a></li>
+<li><a href="mailto:you@example.com">Email me</a></li>
+</ul>
+</nav>
+</footer>
+<script src="js/main.js" defer></script>
+</body>
+</html>
